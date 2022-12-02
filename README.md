@@ -2,7 +2,7 @@
 
 ## Unit 2 Challenge: Creating a Portfolio Page
 
-## #Introduction
+## Introduction
 
 This is my portfolio webpage as part of attending the Trilogy Bootcamp in Full Front End Web Development. This is part of Unit 2 Challenge in creating a portfolio page which will be assessed according to the following acceptance criteria.
 
