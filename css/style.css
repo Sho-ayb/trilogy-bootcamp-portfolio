@@ -1,23 +1,161 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
+  background-color: #87e5fe;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+/* setting sizes for all heading elements */
+
+h1 {
+  font-size: 4rem;
 }
 
-p {
-  margin: 0;
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+/* stlying the main page header */
+
+header {
+  width: 96%;
+  margin: 0 auto;
+  background-color: #0b8ffe;
+  border: 2px solid red;
+}
+
+header h1 {
+  color: #e0eae4;
+  text-align: center;
+}
+
+header nav {
+  width: 100%;
+  background-color: #4c0219;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0.22em;
+  border: 2px solid red;
+}
+
+header nav ul li {
+  font-size: 2.45rem;
+  list-style: none;
+  padding: 0.44em 0.55em;
+  text-transform: uppercase;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  border: 2px dashed #e0eae4;
+  padding: 0.22em 2.33em;
+  color: #e0eae4;
+}
+
+header nav li a:hover {
+  color: #980432;
+  background-color: #e0eae4;
+}
+
+/* styling the hero section  */
+
+.hero-banner {
+  border: 2px solid orange;
+}
+
+.page-wrapper {
+  border: 2px solid red;
+}
+
+.page-section {
+  height: 200px;
+  background-color: beige;
+}
+
+/* media queries  */
+
+@media screen and (min-width: 547px) {
+  header h1 {
+    text-align: center;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav ul li a {
+    border: 2px dashed #e0eae4;
+  }
+
+  header nav li a:hover {
+    color: #980432;
+    background-color: #e0eae4;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header h1 {
+    text-align: left;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav ul li a {
+    border: 2px dashed #e0eae4;
+  }
+
+  header nav li a:hover {
+    color: #980432;
+    background-color: #e0eae4;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header h1 {
+    text-align: left;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  header nav ul li a {
+    border: 2px dashed #e0eae4;
+  }
+
+  header nav li a:hover {
+    color: #980432;
+    background-color: #e0eae4;
+  }
 }
