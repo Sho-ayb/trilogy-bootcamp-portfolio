@@ -33,3 +33,8 @@ This section will be filled out later..
 ## Image of portfolio webpage
 
 ![image of portfolio webpage](./portfolio-webpage-completed.jpg)
+
+## Link to the deployed webpage 
+
+https://sho-ayb.github.io/trilogy-bootcamp-portfolio/
+
