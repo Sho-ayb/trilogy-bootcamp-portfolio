@@ -32,4 +32,4 @@ This section will be filled out later..
 
 ## Image of portfolio webpage
 
-Image of the portfolio webpage will go here..
+![image of portfolio webpage](./portfolio-webpage-completed.jpg)
