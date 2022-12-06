@@ -1,3 +1,13 @@
+:root {
+  --red: rgba(76, 2, 25, 0.8);
+  --lavender: rgba(207, 93, 240, 0.8);
+  --gin: #e0eae4;
+  --primary-green: rgba(126, 213, 111, 0.8);
+  --secondary--green: rgba(40, 180, 133, 0.8);
+  --darker-blue: rgba(38, 35, 52, 0.8);
+  --shaded-black: #333333;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,8 +22,8 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
-  background-color: #333333;
-  color: #e0eae4;
+  background-color: var(--shaded-black);
+  color: var(--gin);
 }
 
 /* setting sizes for all heading elements */
@@ -37,32 +47,27 @@ header {
   margin: 0 auto;
   background: linear-gradient(
     to right bottom,
-    rgba(126, 213, 111, 0.8),
-    rgba(40, 180, 133, 0.8)
+    var(--primary-green),
+    var(--secondary--green)
   );
   border: 2px solid red;
 }
 
 header h1 {
-  color: rgba(76, 2, 25, 0.8);
+  color: var(--red);
   text-align: center;
   margin: 2em 0 2em 0;
 }
 
 header nav {
   width: 95vw;
-  background: linear-gradient(
-    to right bottom,
-    rgba(207, 93, 240, 0.8),
-    rgba(76, 2, 25, 0.8)
-  );
+  background: linear-gradient(to right bottom, var(--lavender), var(--red));
 }
 
 header nav ul {
   flex-flow: row wrap;
   justify-content: center;
   padding: 0.22em;
-  border: 2px solid red;
 }
 
 header nav ul li {
@@ -74,27 +79,26 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  border: 2px dashed #e0eae4;
+  border: 2px dashed var(--gin);
   padding: 0.22em 2.33em;
-  color: #e0eae4;
+  color: var(--gin);
 }
 
 header nav li a:hover {
-  color: #980432;
-  background-color: #e0eae4;
+  color: var(--red);
+  background-color: var(--gin);
 }
 
 /* styling the hero section  */
 
 .hero-banner {
-  border: 2px solid orange;
   width: 96%;
   height: 25vh;
   margin: 0 auto;
   background-image: linear-gradient(
       to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 133, 0.8)
+      var(--primary-green),
+      var(--secondary--green)
     ),
     url("../images/02-hero-bg.jpg");
   background-position: top;
@@ -111,12 +115,8 @@ header nav li a:hover {
 
 .hero-banner div h2 {
   padding: 0.62em 1.2em;
-  color: #e0eae4;
-  background: linear-gradient(
-    to right bottom,
-    rgba(207, 93, 240, 0.8),
-    rgba(76, 2, 25, 0.8)
-  );
+  color: var(--gin);
+  background: linear-gradient(to right bottom, var(--lavender), var(--red));
   font-weight: 900;
   text-align: center;
 }
@@ -124,13 +124,12 @@ header nav li a:hover {
 /*  main content */
 
 .page-wrapper {
-  border: 2px solid red;
   width: 96%;
   margin: 0 auto;
 }
 
 .page-section {
-  background-color: rgba(38, 35, 52, 0.8);
+  background-color: var(--darker-blue);
 }
 
 .page-section .row {
@@ -149,7 +148,7 @@ header nav li a:hover {
   flex-basis: 10vw;
   text-align: center;
   padding: 0 1.32em 1.42em 0;
-  border-right: 4px solid rgba(76, 2, 25, 0.8);
+  border-right: 4px solid var(--red);
 }
 
 .about .about-me-content {
@@ -177,7 +176,7 @@ header nav li a:hover {
   flex: 1;
   flex-basis: 4vw;
   padding: 0 1.32em 1.42em 0;
-  border-right: 4px solid rgba(76, 2, 25, 0.8);
+  border-right: 4px solid var(--red);
   text-align: center;
 }
 
@@ -189,7 +188,6 @@ header nav li a:hover {
 
 .projects .projects-content .item {
   flex: 1;
-  border: 2px solid red;
   align-items: flex-start;
 }
 
@@ -249,7 +247,7 @@ header nav li a:hover {
   flex: 1;
   flex-basis: 14.6vw;
   padding: 0 1.32em 1.42em 0;
-  border-right: 4px solid rgba(76, 2, 25, 0.8);
+  border-right: 4px solid var(--red);
   text-align: center;
 }
 
@@ -267,8 +265,8 @@ header nav li a:hover {
   margin: 0 auto;
   background: linear-gradient(
     to right bottom,
-    rgba(126, 213, 111, 0.8),
-    rgba(40, 180, 133, 0.8)
+    var(--primary-green),
+    var(--secondary--green)
   );
 }
 
@@ -327,7 +325,7 @@ header nav li a:hover {
   }
 
   header nav li a:hover {
-    color: #980432;
+    color: var(--red);
     background-color: #e0eae4;
   }
 
@@ -351,11 +349,11 @@ header nav li a:hover {
   }
 
   header nav ul li a {
-    border: 2px dashed #e0eae4;
+    border: 2px dashed var(--gin);
   }
 
   header nav li a:hover {
     color: #980432;
-    background-color: #e0eae4;
+    background-color: var(--gin);
   }
 }
